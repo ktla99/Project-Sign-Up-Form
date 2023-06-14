@@ -4,7 +4,6 @@
 
 body {
     display: flex;
-    flex-direction: row;
 }
 
 
@@ -13,22 +12,25 @@ body {
     background-size: cover;
     display: flexbox;
     width: 500px;
-    height: 1000px;
+    height: 100vh;
 }
 
 .odin {
-    font-family: DancingScript
+    font-family: 'Dancing Script', cursive;
     color: white;
     display: flex;
     justify-content: center;
     align-self: center;
-    padding-top: 30vw;
+    padding-top: 45svh;
     font-size: 50px;
     font-weight: 600;
 }
 
-.headerTwo {
-    max-width: 50px;
+.containerOne {
+    padding: 10vw 3vh;
 }
 
-
+#group {
+    display: flex;
+    flex-direction: column;
+}
