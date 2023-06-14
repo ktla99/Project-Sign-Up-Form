@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="headerOne">
+      <div class="odin">ODIN</div>
+    </div>
+    <div class="headerTwo">
+        <div class="containerOne">
+            <div class="paragraphOne">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+            <div class="paragraphTwo">Sign up now to get started</div>
+            <div class="paragraphThree">You know you want to</div>
+        </div>
+    
+        <div class="containerTwo">
+            <form>
+                <label for="firstName">
+                    <span>FIRST NAME</span>
+                    <input type="text" id="firstName" name="firstName" required minlength="2" >
+                    <span class="errorFirst" aria-live="first"></span>
+                </label>    
+            </form>
+        </div>
+        <div class="containerThree">
+            <form>
+                <label for="lastName">
+                    <span>LAST NAME</span>
+                    <input type="text" id="lastName" name="lastName" required minlength="2" >
+                    <span class="errorLast" aria-live="last"></span>
+                </label>    
+            </form>
+        </div>
+        <div class="containerFour">
+            <form>
+                <label for="mail">
+                    <span>EMAIL</span>
+                    <input type="email" id="mail" name="mail" required minlength="10" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <span class="errorEmail" aria-live="polite"></span>
+                </label>
+           </form>
+        </div>
+        <div class="containerFive">
+           <form>
+                <label for="number">
+                    <span>PHONE NUMBER</span>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required minlength="10" >
+                    <span class="errorNumber" aria-live="num"></span>
+                </label>    
+            </form>
+        </div>
+        <div class="containerSix">
+            <form>
+                <label for="password">
+                     <span>PASSWORD</span>
+                     <input type="text" id="password" name="password" required minlength="2" >
+                    <span class="errorPass" aria-live="passFirst"></span>
+                </label>    
+            </form>
+        </div>
+        <div class="containerSeven">
+            <form>
+                <label for="lastName">
+                    <span>CONFIRM PASSWORD</span>
+                    <input type="text" id="confirmPass" name="confirmPass" required minlength="2" >
+                    <span class="errorPassSecond" aria-live="passSecond"></span>
+                </label>    
+            </form>
+        </div>
+    
+        <button class="account">Create Account</button>
+
+        <div class="log">
+            <label for="logIn">Already have an account? Log in</label>
+        </div>
+    </div>
+  </body>
+</html>
