@@ -26,11 +26,56 @@ body {
     font-weight: 600;
 }
 
-.containerOne {
-    padding: 10vw 3vh;
+.headerTwo {
+    padding-left: 3vw;
+    padding-right: 4vw;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(142, 213, 247);
 }
 
-#group {
+.paragraphThree {
+    padding-top: 2em;
+}
+
+.group {
     display: flex;
     flex-direction: column;
+}
+
+.headerThree {
+    padding: 5vh 3vh;
+    max-width: 45em;
+    padding-left: 3vw;
+    padding-right: 4vw;
+}
+
+#doThis {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.group2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    position: relative;
+
+}
+
+form {
+    position: relative;
+    width: 300px;
+    height: 10px;
+}
+
+.headerFour {
+    padding: 5vh 3vh;
+    background-color: rgb(142, 213, 247);
+}
+
+.log {
+    background-color: rgb(142, 213, 247);
 }
