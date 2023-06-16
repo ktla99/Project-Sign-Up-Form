@@ -1,9 +1,12 @@
 * {
-    margin: 0;
+    margin: 0px;
 }
 
 body {
     display: flex;
+    height: 100%;
+    height: 100vh;
+    overflow: auto;
 }
 
 
@@ -11,22 +14,36 @@ body {
     background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
     background-size: cover;
     display: flexbox;
-    width: 500px;
-    height: 100vh;
+    min-width: 500px;
+    height: auto;
 }
 
 .odin {
+    display: flex;
     font-family: 'Dancing Script', cursive;
     color: white;
-    display: flex;
+    font-weight: 900;
     justify-content: center;
     align-self: center;
-    padding-top: 45svh;
+    margin-top: 45svh;
     font-size: 50px;
     font-weight: 600;
 }
 
+.odin::after {
+    content: "";
+    background-color: rgb(130, 143, 255);
+    opacity: .2;
+    justify-content: center;
+    align-self: center;
+    top: 300px;
+    right: 16.8em;
+    bottom: 300px;
+    left: 10px;
+}
+
 .headerTwo {
+    display: flexbox;
     padding-left: 3vw;
     padding-right: 4vw;
     padding-top: 10vh;
@@ -34,6 +51,8 @@ body {
     font-size: 20px;
     font-weight: 600;
     background-color: rgb(142, 213, 247);
+    width: 100%;
+    width: 100vw;
 }
 
 .paragraphThree {
@@ -55,6 +74,7 @@ body {
 #doThis {
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 1em;
 }
 
 .group2 {
@@ -62,6 +82,7 @@ body {
     flex-wrap: wrap;
     gap: 5em;
     position: relative;
+    padding-bottom: 2em;
 
 }
 
@@ -71,9 +92,21 @@ form {
     height: 10px;
 }
 
+input {
+    padding-left: 10em;
+    text-align: end;
+    width: 10em;
+    height: 1.5em;
+}
+
+
 .headerFour {
-    padding: 5vh 3vh;
+    padding: 3vw 3vh;
     background-color: rgb(142, 213, 247);
+    height: 100%;
+    height: 100vh;
+
+
 }
 
 .log {
