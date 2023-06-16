@@ -1,62 +1,60 @@
 * {
-    margin: 0px;
+    appearance: none;
+    margin: 0;
 }
 
 body {
     display: flex;
-    height: 100%;
     height: 100vh;
-    overflow: auto;
-}
 
+}
 
 .headerOne {
     background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
     background-size: cover;
     display: flexbox;
     min-width: 500px;
-    height: auto;
+    height: 100%;
+    min-height: 100vh;
 }
+
 
 .odin {
     display: flex;
+    position: relative;
     font-family: 'Dancing Script', cursive;
     color: white;
     font-weight: 900;
     justify-content: center;
     align-self: center;
-    margin-top: 45svh;
+    margin-top: 25svh;
     font-size: 50px;
     font-weight: 600;
-}
-
-.odin::after {
-    content: "";
-    background-color: rgb(130, 143, 255);
-    opacity: .2;
-    justify-content: center;
-    align-self: center;
-    top: 300px;
-    right: 16.8em;
-    bottom: 300px;
-    left: 10px;
 }
 
 .headerTwo {
     display: flexbox;
     padding-left: 3vw;
-    padding-right: 4vw;
+    padding-right: 5vw;
     padding-top: 10vh;
     padding-bottom: 3vh;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
-    background-color: rgb(142, 213, 247);
-    width: 100%;
+    background-color: rgb(183, 232, 255);
     width: 100vw;
+    height: 100%;
+    height: 100vh;
+    font-family: 'Doppio One', sans-serif;
+}
+
+.paragraphOne {
+    max-width: 43vw;
+    word-wrap: break-word;
 }
 
 .paragraphThree {
-    padding-top: 2em;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
 }
 
 .group {
@@ -69,21 +67,22 @@ body {
     max-width: 45em;
     padding-left: 3vw;
     padding-right: 4vw;
+    font-family: 'Doppio One', sans-serif;
 }
 
 #doThis {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     padding-bottom: 1em;
+    font-family: 'Doppio One', sans-serif;
 }
 
 .group2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 5em;
-    position: relative;
+    gap: 6em;
+    position:relative;
     padding-bottom: 2em;
-
 }
 
 form {
@@ -97,18 +96,33 @@ input {
     text-align: end;
     width: 10em;
     height: 1.5em;
+    font-family: 'Doppio One', sans-serif;
+    background-color: rgb(178, 204, 219);
 }
 
 
 .headerFour {
     padding: 3vw 3vh;
-    background-color: rgb(142, 213, 247);
+    background-color: rgb(183, 232, 255);
     height: 100%;
     height: 100vh;
+}
 
-
+button {
+    margin-top: .5em;
+    margin-bottom: 1em;
+    padding: .5em 3em;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(13, 31, 87);
+    border-color: rgb(13, 31, 87);
+    font-family: 'Doppio One', sans-serif;
 }
 
 .log {
-    background-color: rgb(142, 213, 247);
+    font-size: 17px;
+    background-color: rgb(183, 232, 255);
+    font-family: 'Doppio One', sans-serif;
 }
