@@ -54,7 +54,6 @@ body {
 
 .paragraphThree {
     padding-top: 1.5em;
-    padding-bottom: .5em;
 }
 
 .group {
@@ -78,16 +77,28 @@ body {
     font-family: 'Prosto One', cursive;
 }
 
-.group2 {
+.columnOne {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 5em;
-    position:relative;
+}
+
+.columnTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+#doubleColumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
     padding-bottom: 2em;
+    padding-right: 20em;
 }
 
 form {
-    position: relative;
+    position: absolute;
     width: 300px;
     height: 10px;
 }
