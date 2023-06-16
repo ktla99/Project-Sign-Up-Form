@@ -34,10 +34,10 @@ body {
 
 .headerTwo {
     display: flexbox;
-    padding-left: 3vw;
+    padding-left: 3em;
     padding-right: auto;
-    padding-top: 10vh;
-    padding-bottom: 3vh;
+    padding-top: 5em;
+    padding-bottom: 1em;
     font-size: 20px;
     font-weight: 600;
     background-color: rgb(183, 232, 255);
@@ -62,10 +62,10 @@ body {
 }
 
 .headerThree {
-    padding-bottom: 5vh; 
-    padding-top: 1vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-bottom: 3em; 
+    padding-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
     max-width: 45em;
     font-family: 'Prosto One', cursive;
 }
@@ -130,6 +130,7 @@ button {
     margin-bottom: 1em;
     padding: .5em 3em;
     border-radius: 10px;
+    margin-top: .5em;
     font-size: 20px;
     color: white;
     font-weight: bold;
