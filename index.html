@@ -18,7 +18,6 @@
       <div class="odin">ODIN</div>
     </div>
     <div class="group">
-
     <div class="headerTwo">
         <div class="paragraphOne">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
         <div class="paragraphTwo">Sign up <i>now</i> to get started</div>
@@ -26,25 +25,14 @@
     </div>
     <div class="headerThree">
         <div id="doThis">Let's do this!</div>
-
-    <div class="group2">
+    <div id="doubleColumn">    
+    <div class="columnOne">
     <div id="containerOne">
             <form>
                 <label for="firstName">
                     <span>FIRST NAME</span>
                     <input type="text" id="firstName" name="firstName" required minlength="2" >
                     <span class="errorFirst" aria-live="first"></span>
-                </label>    
-            </form>
-    </div>
-    
-
-    <div id="containerTwo">
-            <form>
-                <label for="lastName">
-                    <span>LAST NAME</span>
-                    <input type="text" id="lastName" name="lastName" required minlength="2" >
-                    <span class="errorLast" aria-live="last"></span>
                 </label>    
             </form>
     </div>
@@ -59,16 +47,6 @@
            </form>
     </div>
 
-    <div class="containerFour">   
-           <form>
-                <label for="number">
-                    <span>PHONE NUMBER</span>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required minlength="10" >
-                    <span class="errorNumber" aria-live="num"></span>
-                </label>    
-            </form>
-    </div>
-
     <div class="containerFive">
             <form>
                 <label for="password">
@@ -78,8 +56,30 @@
                 </label>    
             </form>
     </div>
-    
-    <div class="containerSix">
+    </div>
+
+<div class="columnTwo">
+    <div id="containerTwo">
+        <form>
+            <label for="lastName">
+                <span>LAST NAME</span>
+                <input type="text" id="lastName" name="lastName" required minlength="2" >
+                <span class="errorLast" aria-live="last"></span>
+            </label>    
+        </form>
+</div>
+
+<div class="containerFour">   
+    <form>
+         <label for="number">
+             <span>PHONE NUMBER</span>
+             <input type="tel" id="phoneNumber" name="phoneNumber" required minlength="10" >
+             <span class="errorNumber" aria-live="num"></span>
+         </label>    
+     </form>
+</div>
+
+        <div class="containerSix">
             <form>
                 <label for="confirmPass">
                     <span>CONFIRM PASSWORD</span>
@@ -87,9 +87,10 @@
                     <span class="errorPassSecond" aria-live="passSecond"></span>
                 </label>    
             </form>
-    </div>
-    </div>
-    </div>
+        </div>
+</div>
+</div>
+</div>
 
     <div class="headerFour">
         <button class="account">Create Account</button>
