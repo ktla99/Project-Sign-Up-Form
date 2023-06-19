@@ -93,7 +93,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 3.5em;
     padding-right: 20em;
 }
 
@@ -111,6 +111,27 @@ input {
     height: 1.5em;
     font-family: 'Prosto One', cursive;
     background-color: rgb(178, 204, 219);
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+    background-color: rgb(231, 191, 191);
+}
+
+.errorPass,
+.errorPassTwo {
+    padding: 0;
+    font-size: 0%;
+    color: rgb(212, 25, 25);
+    background-color: rgb(96, 248, 108);
+    border-radius: 0 0  5px 5px;
+    box-sizing: border-box;
+}
+
+.errorPass.active,
+.errorPassTwo.active {
+    display: flex;
+    font-size: .8em;
 }
 
 label {
@@ -137,6 +158,12 @@ button {
     background-color: rgb(13, 31, 87);
     border-color: rgb(13, 31, 87);
     font-family: 'Prosto One', cursive;
+    
+}
+
+button:active {
+    box-shadow: 0px 0px 2px 2px rgb(0, 238, 255);
+    background-color: rgb(146, 224, 255);
 }
 
 .log {
