@@ -28,7 +28,7 @@
     <div class="headerThree">
         <div id="doThis">Let's do this!</div>
 <div id="doubleColumn">    
-<div class="columnOne">
+    <div class="columnOne">
     <div id="containerOne">
             <form>
                 <label for="firstName">
@@ -43,7 +43,7 @@
             <form>
                 <label for="mail">
                     <span>EMAIL</span>
-                    <input type="email" id="mail" name="mail" required minlength="10" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input type="email" id="mail" name="mail" required minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" >
                     <span class="errorEmail" aria-live="polite"></span>
                 </label>
            </form>
@@ -53,8 +53,8 @@
             <form>
                 <label for="password">
                      <span>PASSWORD</span>
-                     <input type="text" id="password" name="password" required minlength="2" >
-                    <span class="errorPass" aria-live="passFirst"></span>
+                     <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" >
+                     <span class="errorPass" aria-live="passFirst"></span>
                 </label>    
             </form>
     </div>
@@ -85,8 +85,8 @@
             <form>
                 <label for="confirmPass">
                     <span>CONFIRM PASSWORD</span>
-                    <input type="text" id="confirmPass" name="confirmPass" required minlength="2" >
-                    <span class="errorPassSecond" aria-live="passSecond"></span>
+                    <input type="password" id="confirmPass" name="confirmPass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" >
+                    <span class="errorPassTwo" aria-live="passWord"></span>
                 </label>    
             </form>
         </div>
@@ -98,11 +98,13 @@
         <button class="account">Create Account</button>
 
         <div class="log">
-            <label for="logIn">Already have an account? Log in</label>
+            <label for="logIn">Already have an account? <span style="color: rgb(117, 117, 117);">Log in</span> </label>
         </div>
     </div>
     </div>
+    <div class="footer">Photo by Gabriel Kraus</div>
   </body>
-  <div class="footer">Photo by Gabriel Kraus</div>
+  
+<script src="app.js"></script>
 
 </html>
