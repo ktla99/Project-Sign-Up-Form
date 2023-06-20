@@ -6,8 +6,7 @@ const passwordError = document.querySelector("#password + span.errorPass");
 const passwordConfirm = document.getElementById("confirmPass");
 const passwordConfirmError = document.querySelector("#confirmPass + span.errorPassTwo");
 
-const valueOne = document.getElementById("password").length;
-const valueTwo = document.getElementById("confirmPass").length;
+
 
 password.addEventListener("input", (Event) => {
     if (password.validity.valid) {
@@ -51,12 +50,15 @@ function showError() {
 };
 
 function showError2() {
+    let valueOne = document.querySelector("input[name=password]");
+    let valueTwo = document.querySelector("input[name=confirmPass]");
     if (passwordConfirm.validity.valueMissing) {
         passwordConfirmError.textContent = "Please re-enter the password.";
-    } else if (password != passwordConfirm && valueOne != valueTwo) {
+    } else if (valueOne !== valueTwo) {
         passwordConfirmError.textContent = `Passwords do not match.`;
     } else if (passwordConfirm.validity.patternMismatch) {
-        passwordConfirmError.textContent = "Characters need to match.";
+        passwordConfirmError.textContent = "Password is invalid.";
     }
     passwordConfirmError.className = "errorPassTwo active";
 };
+
