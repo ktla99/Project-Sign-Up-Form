@@ -39,6 +39,16 @@ body {
     font-size: 50px;
 }
 
+.footer {
+    font-family: 'Prosto One', cursive;
+    display: flex;
+    flex-direction: column;
+    color: rgb(223, 223, 223);
+    font-size: 1em;
+    text-align: center;
+    margin-top: 70vh;
+}
+
 .headerTwo {
     display: flexbox;
     padding-left: 3em;
@@ -179,9 +189,3 @@ button:active {
     font-family: 'Prosto One', cursive;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    color: rgb(250, 0, 0);
-    font-size: 30px;
-}
