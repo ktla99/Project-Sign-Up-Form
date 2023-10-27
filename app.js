@@ -1,4 +1,4 @@
-const form  = document.querySelector("form");
+const form  = document.querySelectorAll("form");
 
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
@@ -11,7 +11,7 @@ const passwordError = document.querySelector("#password + span.errorPass");
 const passwordConfirm = document.getElementById("confirmPass");
 const passwordConfirmError = document.querySelector("#confirmPass + span.errorPassTwo");
 
-const button = document.querySelector(".account");
+const button = document.querySelector("#account");
 
 
 password.addEventListener("input", (Event) => {
@@ -23,11 +23,13 @@ password.addEventListener("input", (Event) => {
     }
 });
 
-form.addEventListener("submit", (Event) => {
-    if (!password.validity.valid) {
-        showError();
-        Event.preventDefault();
-    }
+form.forEach((Event) => {
+    addEventListener("submit", (Event) => {
+        if (!password.validity.valid) {
+            showError();
+            Event.preventDefault();
+        }
+    })
 });
 
 passwordConfirm.addEventListener("input", (Event) => {
@@ -39,11 +41,13 @@ passwordConfirm.addEventListener("input", (Event) => {
     }
 });
 
-form.addEventListener("submit", (Event) => {
-    if (!passwordConfirm.validity.valid) {
-        showError2();
-        Event.preventDefault();
-    }
+form.forEach((Event) => {
+    addEventListener("submit", (Event) => {
+        if (!passwordConfirm.validity.valid) {
+            showError2();
+            Event.preventDefault();
+        }
+    })
 });
 
 function showError() {
@@ -65,12 +69,7 @@ function showError2() {
 };
 
 button.addEventListener("click", () => {
-    if((firstName.validity.valid) && (lastName.validity.valid) && 
-    (phoneNumber.validity.valid) && (mail.validity.valid) && 
-    (passwordConfirm.validity.valid) && (passwordConfirmError.validity.valid)) {
-        reset();
-    } else {
-        alert("Please recheck your information for errors.")
-    }
-    
+    form.forEach((formOne) => {
+        formOne.reset();
+    } )
 })
