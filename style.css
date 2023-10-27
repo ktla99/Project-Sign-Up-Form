@@ -12,31 +12,38 @@
 
 body {
     display: flex;
-    width: 100%;
+    max-width: 100vw;
     height: 100vh;
-
 }
 
+/*
 @media screen and (min-width: 480px) {
     body{ 
         max-width: 1500px;
     }
 }
+*/
 
-
-.backgroundImage {
+.groupOne {
     background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-width: 600px;
+    width: 30vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    gap: 8em;
+    gap: 25em;
 }
 
+.groupTwo {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+}
 
-.odin {
+.sorcerer {
     display: flex;
     font-family: 'Dancing Script', cursive;
     color: white;
@@ -44,6 +51,7 @@ body {
     justify-content: center;
     font-weight: 900;
     font-size: 50px;
+    padding-bottom: 7em;
 }
 
 .artistOfImage {
@@ -52,36 +60,25 @@ body {
     color: rgba(138, 138, 138, 0.25);
     font-size: 1em;
     text-align: center;
+    
+
 }
 
 .summaryBox {
-    display: flexbox;
-    padding-left: 3em;
-    padding-right: auto;
-    padding-top: 5em;
-    padding-bottom: 1em;
+    font-family: 'Prosto One', cursive;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 33.3333vh;
+    padding: 5em 2em;
     font-size: 20px;
     font-weight: 600;
     background-color: rgb(183, 232, 255);
-    width: 100vw;
-    height: 100%;
-    height: 100vh;
-    font-family: 'Prosto One', cursive;
-}
-
-.paragraphOne {
-    max-width: 53vw;
     word-wrap: break-word;
+    gap: 1em;
 }
 
-.paragraphThree {
-    padding-top: 1.5em;
-}
 
-.group {
-    display: flex;
-    flex-direction: column;
-}
 
 .formBox {
     padding-bottom: 3em; 
@@ -89,6 +86,7 @@ body {
     padding-left: 4em;
     padding-right: 4em;
     max-width: 45em;
+    height: 33.3333vh;
     font-family: 'Prosto One', cursive;
 }
 
@@ -126,8 +124,7 @@ form {
 }
 
 input {
-    position: relative;
-    text-align: left;
+    position: relative;vh;
     padding-left: .7em;
     width: 17em;
     height: 1.5em;
@@ -162,24 +159,27 @@ label {
 
 
 .accountBox {
-    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    height: 33.3333vh;
     background-color: rgb(183, 232, 255);
-    height: 100%;
-    height: 100vh;
-    padding-left: 4em;
+    
 }
 
 button {
-    margin-bottom: 1em;
-    padding: .5em 3em;
+    font-family: 'Prosto One', cursive;
+    display: block;
     border-radius: 10px;
-    margin-top: .5em;
+    margin-left: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 3em;
+    width: 11em;
     font-size: 20px;
     color: white;
     font-weight: bold;
     background-color: rgb(13, 31, 87);
     border-color: rgb(13, 31, 87);
-    font-family: 'Prosto One', cursive;
     
 }
 
