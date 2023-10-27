@@ -1,11 +1,17 @@
 const form  = document.querySelector("form");
 
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const phoneNumber = document.getElementById("phoneNumber");
+const mail = document.getElementById("mail");
+
 const password = document.getElementById("password");
 const passwordError = document.querySelector("#password + span.errorPass");
 
 const passwordConfirm = document.getElementById("confirmPass");
 const passwordConfirmError = document.querySelector("#confirmPass + span.errorPassTwo");
 
+const button = document.querySelector(".account");
 
 
 password.addEventListener("input", (Event) => {
@@ -50,15 +56,21 @@ function showError() {
 };
 
 function showError2() {
-    let valueOne = document.querySelector("input[name=password]");
-    let valueTwo = document.querySelector("input[name=confirmPass]");
     if (passwordConfirm.validity.valueMissing) {
         passwordConfirmError.textContent = "Please re-enter the password.";
-    } else if (valueOne !== valueTwo) {
+    } else if (password !== passwordConfirm) {
         passwordConfirmError.textContent = `Passwords do not match.`;
-    } else if (passwordConfirm.validity.patternMismatch) {
-        passwordConfirmError.textContent = "Password is invalid.";
-    }
+    } 
     passwordConfirmError.className = "errorPassTwo active";
 };
 
+button.addEventListener("click", () => {
+    if((firstName.validity.valid) && (lastName.validity.valid) && 
+    (phoneNumber.validity.valid) && (mail.validity.valid) && 
+    (passwordConfirm.validity.valid) && (passwordConfirmError.validity.valid)) {
+        reset();
+    } else {
+        alert("Please recheck your information for errors.")
+    }
+    
+})
