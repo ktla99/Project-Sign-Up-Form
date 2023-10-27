@@ -12,44 +12,49 @@
 
 body {
     display: flex;
+    width: 100%;
     height: 100vh;
 
 }
 
-.headerOne {
-    background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
-    background-size: cover;
-    display: flexbox;
-    min-width: 600px;
-    height: 100%;
-    min-height: 100vh;
+@media screen and (min-width: 480px) {
+    body{ 
+        max-width: 1500px;
+    }
 }
 
+
+.backgroundImage {
+    background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
 
 
 .odin {
     display: flex;
-    position: relative;
     font-family: 'Dancing Script', cursive;
     color: white;
-    font-weight: 900;
+    align-items: center;
     justify-content: center;
-    align-self: center;
-    margin-top: 20svh;
+    font-weight: 900;
     font-size: 50px;
 }
 
-.footer {
+.artistOfImage {
     font-family: 'Prosto One', cursive;
     display: flex;
-    flex-direction: column;
-    color: rgb(223, 223, 223);
+    color: rgba(138, 138, 138, 0.25);
     font-size: 1em;
     text-align: center;
-    margin-top: 70vh;
 }
 
-.headerTwo {
+.summaryBox {
     display: flexbox;
     padding-left: 3em;
     padding-right: auto;
@@ -78,7 +83,7 @@ body {
     flex-direction: column;
 }
 
-.headerThree {
+.formBox {
     padding-bottom: 3em; 
     padding-top: 1em;
     padding-left: 4em;
@@ -156,7 +161,7 @@ label {
 }
 
 
-.headerFour {
+.accountBox {
     padding-top: 3vh;
     background-color: rgb(183, 232, 255);
     height: 100%;
