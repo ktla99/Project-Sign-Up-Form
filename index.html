@@ -4,14 +4,14 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up Form</title>
-            <link rel="stylesheet" href="style.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
     </head>
 
   <body>
@@ -36,7 +36,7 @@
                         <form>
                             <label for="firstName">
                                 <span>FIRST NAME</span>
-                                <input type="text" id="firstName" name="firstName" required minlength="2" >
+                                <input type="text" id="firstName" name="firstName" required minlength="2" placeholder="Enter First Name" style="text-transform:uppercase">
                                 <span class="errorFirst" aria-live="first"></span>
                             </label>    
                         </form>
@@ -44,21 +44,22 @@
 
                     <div class="containerThree">
                         <form>
-                            <label for="mail">
-                                <span>EMAIL</span>
-                                <input type="email" id="mail" name="mail" required minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" >
-                                <span class="errorEmail" aria-live="polite"></span>
-                            </label>
+                            <label for="lastName">
+                                <span>LAST NAME</span>
+                                <input type="text" id="lastName" name="lastName" required minlength="2" placeholder="Enter Last Name" style="text-transform:uppercase">
+                                <span class="errorLast" aria-live="last"></span>
+                                
+                            </label>    
                         </form>
                     </div>
 
                     <div class="containerFive">
                         <form>
-                            <label for="password">
-                                <span>PASSWORD</span>
-                                <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" >
-                                <span class="errorPass" aria-live="passFirst"></span>
-                            </label>    
+                            <label for="number">
+                                <span>PHONE NUMBER</span>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" required minlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
+                                <span class="errorNumber" aria-live="num"></span>
+                            </label>      
                         </form>
                     </div>
                 </div>
@@ -66,21 +67,21 @@
                 <div class="columnTwo">
                     <div id="containerTwo">
                         <form>
-                            <label for="lastName">
-                                <span>LAST NAME</span>
-                                <input type="text" id="lastName" name="lastName" required minlength="2" >
-                                <span class="errorLast" aria-live="last"></span>
-                            </label>    
+                            <label for="mail">
+                                <span>EMAIL</span>
+                                <input type="email" id="mail" name="mail" required minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" placeholder="Enter Email Here" style="text-transform:uppercase">
+                                <span class="errorEmail" aria-live="polite"></span>
+                            </label>
                         </form>
                     </div>
 
                     <div class="containerFour">   
                         <form>
-                            <label for="number">
-                                <span>PHONE NUMBER</span>
-                                <input type="tel" id="phoneNumber" name="phoneNumber" required minlength="10" >
-                                <span class="errorNumber" aria-live="num"></span>
-                            </label>    
+                            <label for="password">
+                                <span>PASSWORD</span>
+                                <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" >
+                                <span class="errorPass" aria-live="passFirst"></span>
+                            </label>     
                         </form>
                     </div>
 
@@ -98,10 +99,10 @@
         </div>
 
         <div class="accountBox">
-            <button class="account">Create Account</button>
+            <input type="submit" class="account" value="Create Account">
 
             <div class="log">
-                <label for="logIn">Already have an account? <span class="colorLog" style="color: rgb(117, 117, 117);">Log in</span> </label>
+                <label for="logIn">Already have an account? <span class="colorLog" style="color: rgb(117, 117, 117);"><a href="#">Log in</a></span> </label>
             </div>
         </div>
         
