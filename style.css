@@ -24,23 +24,17 @@ body {
 }
 */
 
+/* groupOne and its children */
 .groupOne {
     background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 25em;
-}
-
-.groupTwo {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-    height: 100vh;
 }
 
 .sorcerer {
@@ -60,33 +54,42 @@ body {
     color: rgba(138, 138, 138, 0.25);
     font-size: 1em;
     text-align: center;
-    
-
 }
+
+/* groupTwo and its children */
+
+.groupTwo {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100%;
+}
+
 
 .summaryBox {
     font-family: 'Prosto One', cursive;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 33.3333vh;
-    padding: 5em 2em;
+    height: 30vh;
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 10em;
     font-size: 20px;
     font-weight: 600;
     background-color: rgb(183, 232, 255);
-    word-wrap: break-word;
+    
     gap: 1em;
 }
 
-
-
+/* formBox and its children */
 .formBox {
-    padding-bottom: 3em; 
+    display: flex;
+    flex-direction: column;
     padding-top: 1em;
     padding-left: 4em;
     padding-right: 4em;
     max-width: 45em;
-    height: 33.3333vh;
+    height: 40vh;
     font-family: 'Prosto One', cursive;
 }
 
@@ -95,6 +98,14 @@ body {
     font-weight: bold;
     padding-bottom: 1em;
     font-family: 'Prosto One', cursive;
+}
+
+#doubleColumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 3.5em;
+    padding-right: 20em;
 }
 
 .columnOne {
@@ -109,27 +120,24 @@ body {
     gap: 5em;
 }
 
-#doubleColumn {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2em;
-    padding-bottom: 3.5em;
-    padding-right: 20em;
-}
-
 form {
-    position: absolute;
+    display: flex;
     width: 300px;
     height: 10px;
 }
 
+label {
+    font-size: 15px;
+}
+
 input {
-    position: relative;vh;
+    position: relative;
     padding-left: .7em;
-    width: 17em;
-    height: 1.5em;
+    min-width: 17em;
+    min-height: 1.5em;
     font-family: 'Prosto One', cursive;
     background-color: rgb(178, 204, 219);
+    color: rgb(12, 34, 160);
 }
 
 input[type="password"]:invalid {
@@ -153,43 +161,41 @@ input[type="password"]:invalid {
     font-size: .8em;
 }
 
-label {
-    font-size: 15px;
-}
 
+/* accountBox and its children */
 
 .accountBox {
     display: flex;
     flex-direction: column;
-    height: 33.3333vh;
+    height: 20vh;
     background-color: rgb(183, 232, 255);
-    
 }
 
-button {
+.account {
     font-family: 'Prosto One', cursive;
     display: block;
     border-radius: 10px;
     margin-left: 3em;
     margin-top: 1em;
     margin-bottom: 1em;
-    height: 3em;
-    width: 11em;
+    height: 2.5em;
+    width: 1em;
     font-size: 20px;
     color: white;
     font-weight: bold;
     background-color: rgb(13, 31, 87);
     border-color: rgb(13, 31, 87);
-    
 }
 
-button:active {
+.account:active {
     box-shadow: 0px 0px 2px 2px rgb(0, 238, 255);
     background-color: rgb(146, 224, 255);
 }
 
 .log {
+    display: flex;
     font-size: 20px;
+    margin-left: 3em;
     background-color: rgb(183, 232, 255);
     font-family: 'Prosto One', cursive;
 }
