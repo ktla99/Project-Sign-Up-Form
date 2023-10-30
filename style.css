@@ -1,6 +1,6 @@
 * {
-    appearance: none;
     margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -10,25 +10,31 @@
     font-weight: bold;
   }
 
-body {
-    display: grid;
-    grid-row: auto;
-    grid-column: 1fr 2fr;
-}
+/* media queries */
 
-/*
-@media screen and (min-width: 480px) {
-    body{ 
-        max-width: 1500px;
+@media screen and (max-width: 1140px){
+    body, input {
+        font-size: 15px;
     }
 }
-*/
+
+@media screen and (max-width: 1680px){
+    body, input, .container {
+        font-size: 20px;
+    }
+}
+ 
+
+.container {
+    display: flex;
+}
+
 
 /* groupOne and its children */
 .groupOne {
     background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
     background-size: cover;
-    display: grid;
+    
     grid-template-rows: 2fr 1fr;
     height: 100%;
     justify-content: center;
@@ -36,8 +42,7 @@ body {
 }
 
 .sorcerer {
-    display: grid;
-    grid-row: 1;
+    
     font-family: 'Dancing Script', cursive;
     color: white;
     align-items: center;
@@ -48,7 +53,7 @@ body {
 
 .artistOfImage {
     font-family: 'Prosto One', cursive;
-    display: grid;
+    
     color: rgba(138, 138, 138, 0.25);
     font-size: 1em;
     align-items: center;
@@ -59,18 +64,15 @@ body {
 /* groupTwo and its children */
 
 .groupTwo {
-    display: grid;
-    grid-template-rows: 1fr 1fr 7.5rem;
-    grid-column: 2;
+    
     width: 70vw;
     height: 100%;
 }
 
 .summaryBox {
     font-family: 'Prosto One', cursive;
-    display: grid;
-    grid-row: 1;
-    height: 25vh;
+    
+    height: 10rem;
     padding-top: 3em;
     padding-left: 3em;
     padding-right: 10em;
@@ -81,13 +83,12 @@ body {
 
 /* formBox and its children */
 .formBox {
-    display: grid;
-    grid-row: 2;
-    grid-template-rows: 1rem 1fr;
+    
+    padding-top: 5rem;
     padding-left: 4em;
     padding-right: 4em;
     max-width: 45em;
-    height: 40vh;
+    height: 25rem;
     font-family: 'Prosto One', cursive;
 }
 
@@ -99,9 +100,7 @@ body {
 }
 
 #doubleColumn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    
     padding-top: 2em;
     padding-bottom: 3.5em;
     padding-right: 20em;
@@ -109,16 +108,12 @@ body {
 }
 
 .columnOne {
-    display: grid;
-    grid-column: 1;
-    grid-template-rows: repeat(3, 1em);
+    
     gap: 5em;
 }
 
 .columnTwo {
-    display: grid;
-    grid-column: 2;
-    grid-template-rows: repeat(3, 1em);
+    
     gap: 5em;
 }
 
@@ -128,16 +123,13 @@ label {
 
 .columnOne form label,
 .columnTwo form label {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2rem 2rem;
+    
 }
 
 
 
 input {
-    display: grid;
-    grid-row: 2;
+    
     min-width: 17em;
     min-height: 1.5em;
     font-family: 'Prosto One', cursive;
@@ -152,7 +144,7 @@ input[type="password"]:invalid {
 
 .errorPass,
 .errorPassTwo {
-    display: flex;
+    
     font-size: 0%;
     color: rgb(212, 25, 25);
     background-color: rgb(96, 248, 108);
@@ -170,15 +162,14 @@ input[type="password"]:invalid {
 /* accountBox and its children */
 
 .accountBox {
-    display: grid;
-    grid-row: 3;
+    
     height: 100%;
     background-color: rgb(183, 232, 255);
 }
 
 #account {
     font-family: 'Prosto One', cursive;
-    display: block;
+    
     border-radius: 10px;
     margin-left: 3em;
     margin-top: 1em;
@@ -191,16 +182,17 @@ input[type="password"]:invalid {
     border-color: rgb(13, 31, 87);
 }
 
-.account:active {
+#account:active {
     box-shadow: 0px 0px 2px 2px rgb(0, 238, 255);
     background-color: rgb(146, 224, 255);
 }
 
 .log {
-    display: flex;
+    
     font-size: 20px;
     margin-left: 3em;
     background-color: rgb(183, 232, 255);
     font-family: 'Prosto One', cursive;
 }
+
 
