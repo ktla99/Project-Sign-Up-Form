@@ -34,38 +34,40 @@
 .groupOne {
     background: url(https://images.unsplash.com/photo-1625685959735-77460dc42f06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80;) no-repeat;
     background-size: cover;
-    
-    grid-template-rows: 2fr 1fr;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 40%;
+    gap: 10em;
 }
 
 .sorcerer {
-    
     font-family: 'Dancing Script', cursive;
+    display: flex;
     color: white;
     align-items: center;
     justify-content: center;
     font-weight: 900;
     font-size: 60px;
+    padding-top: 1em;
 }
 
 .artistOfImage {
     font-family: 'Prosto One', cursive;
-    
+    display: flex;
     color: rgba(138, 138, 138, 0.25);
     font-size: 1em;
     align-items: center;
     justify-content: center;
-    padding-top: 15rem;
+    padding-top: 30em;
 }
 
 /* groupTwo and its children */
 
 .groupTwo {
-    
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
     height: 100%;
 }
 
