@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"/>
         <title>Sign Up Form</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,7 @@
     </head>
 
   <body>
+    <div class="container">
     <div class="groupOne">
       <div class="sorcerer">Sorcercers Unite!</div>
       <div class="artistOfImage">Photo by Gabriel Kraus</div>
@@ -32,7 +33,7 @@
             <div id="doThis">Let's do this!</div>
             <div id="doubleColumn">    
                 <div class="columnOne">
-                        <form>
+                        <form id="firstNameForm">
                             <label for="firstName">
                                 <span>FIRST NAME</span>
                                 <input type="text" id="firstName" name="firstName" required minlength="2" placeholder="Enter First Name" style="text-transform:uppercase">
@@ -56,7 +57,7 @@
                                 <span class="errorNumber" aria-live="num"></span>
                             </label>      
                         </form>
-                    </div>
+                </div>
                 
 
                 <div class="columnTwo">
@@ -96,6 +97,7 @@
         </div>
         
     </div>
+</div>
   </body>
   
 <script src="app.js"></script>
