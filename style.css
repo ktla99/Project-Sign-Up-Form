@@ -12,18 +12,62 @@
 
 /* media queries */
 
-@media screen and (max-width: 1140px){
-    body, input {
-        font-size: 15px;
+@media screen and (max-width: 47.9999em){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .groupOne {
+        min-width: 100%;
+    }
+    .summaryBox,
+    .formBox {
+       display: flex;
+       align-items: center;
+       text-align: center;
+    }
+    #doubleColumn {
+        display: flex;
+        flex-direction: column;
+    }
+    .columnOne, 
+    .columnTwo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-left: 10em;
+    }
+
+    input label {
+        display: flex;
+        max-width: 1em;
+        max-height: 5em;
+    }
+    .logIn {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .accountBox {
+        align-items: center;
+        padding: 0;
+        padding-right: 3em;
+    }
+    #account {
+        display: flex;
+        align-self: center;
+        padding: 0;
+        
     }
 }
 
-@media screen and (max-width: 1680px){
-    body, input, .container {
-        font-size: 20px;
-    }
-}
- 
+
+/* container */
 
 .container {
     display: flex;
@@ -105,13 +149,16 @@
     padding-top: 2em;
     padding-bottom: 3.5em;
     padding-right: 20em;
-    gap: 15rem;
 }
 
 .columnOne 
 .columnTwo  {
     display: flex;
     flex-direction: column;
+}
+
+.columnOne {
+    padding-right: 15rem;
 }
 
 label {
@@ -145,7 +192,7 @@ input[type="password"]:invalid {
     font-size: 0%;
     color: rgb(212, 25, 25);
     background-color: rgb(96, 248, 108);
-    border-radius: 0 0  5px 5px;
+    border-radius: 0 0 1px 1px;
     box-sizing: border-box;
 }
 
